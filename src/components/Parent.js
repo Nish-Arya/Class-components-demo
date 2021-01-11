@@ -7,7 +7,18 @@ function Parent() {
 
   useEffect(() => {
     console.log('I have mounted!');
+    return () => {
+      console.log("I am going to unmount");
+    }
   }, [])
+
+  useEffect(() => {
+    console.log('Count was updated to', count)
+  }, [count])
+  
+  useEffect(() => {
+    console.log("Message was updated to", message);
+  }, [message]);
 
   return (
     <>
