@@ -23,8 +23,8 @@ function Parent() {
   return (
     <>
       <h1>Hello from parent!</h1>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <button onClick={() => setCount((prevCount) => prevCount + 1)}>+</button>
+      <button onClick={() => setCount((prevCount) => prevCount - 1)}>-</button>
       <input
         type="text"
         value={message}
