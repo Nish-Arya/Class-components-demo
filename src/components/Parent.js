@@ -6,14 +6,14 @@ function Parent() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    console.log('I have mounted!');
+    console.log('I have mounted');
     return () => {
       console.log("I am going to unmount");
     }
   }, [])
 
   useEffect(() => {
-    console.log('Count was updated to', count)
+    console.log('Count was updated to', count);
   }, [count])
   
   useEffect(() => {

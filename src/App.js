@@ -4,8 +4,8 @@ import Parent from './components/Parent';
 function App() {
   return (
     <>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='/test'>Away</NavLink>
+      <NavLink to='/' exact>Home</NavLink>
+      <NavLink to='/away'>Away</NavLink>
       <Route path="/" exact>
         <Parent />
       </Route>

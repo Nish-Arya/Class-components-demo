@@ -10,6 +10,7 @@ class Rectangle {
 }
 
 const rectangle = new Rectangle(12, 15);
+
 console.log("length:", rectangle.length);
 console.log("width:", rectangle.width);
 console.log("area:", rectangle.getArea());
